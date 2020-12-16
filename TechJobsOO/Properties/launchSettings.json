@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TechJobsOO": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

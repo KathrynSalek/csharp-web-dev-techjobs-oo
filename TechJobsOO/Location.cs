@@ -1,21 +1,28 @@
-﻿using System;
-namespace TechJobsOO
+﻿namespace TechJobsOO
 {
-    public class Location
+    public class Location : JobField // Class  #2 Add properties and custom methods as needed to the Location, CoreCompetency, and PositionType classes.  DONE - code below
     {
-        public int Id { get; }
+        public Location(string value) : base(value)
+        {
+        }
+        /* public int Id { get; }
         private static int nextId = 1;
         public string Value { get; set; }
 
-        public Location()
+        public Location()  // Constructor 
         {
             Id = nextId;
             nextId++;
         }
 
-        // TODO: Add a second constructor to this class that uses the Location() constructor and sets the value of the value field.
+        public Location(string Value) // My code - second constructor sets the value of the value field
+        {
+            bool v = this.Value == Value;
+        }
 
-        public override bool Equals(object obj)
+        // TODO: Add a second constructor to this class that uses the Location() constructor and sets the value of the value field.  DONE - code above
+
+        public override bool Equals(object obj)  // Methods
         {
             return obj is Location location &&
                    Id == location.Id;
@@ -23,12 +30,12 @@ namespace TechJobsOO
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id);
+            return HashCode.Combine(Id, Value);
         }
 
         public override string ToString()
         {
             return Value;
-        }
+        } */
     }
 }
